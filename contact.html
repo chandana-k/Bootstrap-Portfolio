@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <title>Contact</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
@@ -41,6 +39,8 @@
         }
         .container {
             background-color: #ffffff;
+            display: inline-block;
+            text-align: left;
         }
         h2 {
             font-size: 24px;
@@ -50,6 +50,17 @@
             padding-bottom: 30px;
             border-bottom: 3px solid #ddd;
         }
+        label {
+            display: inline-block;
+            margin-bottom: .5rem;
+            float: left;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #4aaaa5;
+            float: left;
+        }
+        
         
     </style>
 </head>
@@ -57,7 +68,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="d-flex justify-content-between w-100">
-                    <a class="navbar-brand p-3 text-white" href="#">Chandana</a>
+                    <a class="navbar-brand p-4 text-white" href="#">Chandana</a>
                     <div class="navbar-nav">
                     <a class="nav-item nav-link" href="index.html">About</a>
                     <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
@@ -68,39 +79,33 @@
         </div>
     </header>
 
-    <div class="row align-items-center">
-        <div class="col-md-12" align="center">
-    
-    <div class="container p-3 m-3">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Contact</h2>
+    <div class="row">
+        <div class="col-sm-12" align="center">
+            <div class="container p-3 mt-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Contact</h2>
+                    </div>
+                </div>                  
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Last name</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-left">Submit</button>
+                </form>
             </div>
         </div>
-             
-    <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1">First name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Smith">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Last name</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="example@gmail.com">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-
     </div>
-    </div>
-    
-    
-       
-
+      
     <footer class="footer">
         <span>Copyright&copy; Chandana 2018</span>
     </footer>
