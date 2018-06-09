@@ -8,18 +8,29 @@
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+    <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #f5f5f5;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <aside><h1>Chandana</h1></aside>
-            <nav>
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
-                <a href="contact.html">Contact</a> 
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex justify-content-between w-100">
+                <a class="navbar-brand" href="#">Chandana</a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">About</a>
+                    <a class="nav-item nav-link active" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a> 
+                </div>
+            </div>
+        </nav>
     </header>
     <section>
         <h2>Portfolio</h2>
@@ -48,6 +59,11 @@
     </section>
     
 
-    <footer><p>Copyright&copy; Chandana 2018<p></footer>
+    <!-- <footer><p>Copyright&copy; Chandana 2018<p></footer> -->
+        <footer class="footer">
+                <div class="container">
+                  <span class="text-muted">Copyright&copy; Chandana 2018</span>
+                </div>
+        </footer>
 </body>
 </html>
